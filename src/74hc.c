@@ -69,6 +69,7 @@ UCHAR	g74HC77_Count = 0;
 #if defined IC74HC4511_USED
 UCHAR	g74HC4511_LastNum[IC74HC4511_USED];
 UCHAR	g74HC4511_Count = 0;
+UCHAR   dot_flag = 0;
 #endif /* end of defined IC74HC4511_USED */
 
 #if defined IC74HC166_USED
@@ -782,7 +783,9 @@ UCHAR  IC_74HC4511_Evaluate( UCHAR State, UCHAR A_in, UCHAR B_in, UCHAR C_in, UC
 		case 0:
 			ucValue = A_in + (B_in << 1) + (C_in << 2) + (D_in << 3);
 			if(ucValue > 10) ucValue = 10;
+			if(*g74HC4511_LastNum == 9 && ucValue == 0){ dot_flag = (~dot_flag) & 0x01;}
 			ByteMemSet(g74HC4511_LastNum, g74HC4511_Count, ucValue);
+			
 			break;
 		case 1:
 			ucValue = 8;
@@ -799,6 +802,8 @@ UCHAR  IC_74HC4511_Evaluate( UCHAR State, UCHAR A_in, UCHAR B_in, UCHAR C_in, UC
 	}
 	
 	if (ucValue > 10) ucValue = 10;
+	if (dot_flag == 1)  return ucRet[ucValue] + 0b01;
+	
 	return ucRet[ucValue];
 }
 

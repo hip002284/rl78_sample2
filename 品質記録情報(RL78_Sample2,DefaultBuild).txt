@@ -1,13 +1,12 @@
 品質記録情報
-2024年6月3日 16:54:20
+2024年6月4日 16:13:05
 
 ------ ビルド開始(RL78_Sample2, DefaultBuild) ------
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\main.c src\common.c src\timer.c src\int.c src\port.c src\watchdogtimer.c src\system.c src\systeminit.c src\panel.c src\digitalio.c src\counter.c src\74hc.c -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -g_line -Osize -I include -c -msg_lang=japanese
-W0511186:CC-RL V1のオプション"-Osize"の評価期間は残り57日です。評価期間経過後は、暗黙に"-Olite"指定に変更されます。引き続き"-Osize"を利用したい場合は製品の購入をご検討ください。
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\cstart.asm src\opt_byte.asm -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -c -msg_lang=japanese
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\74hc.c -cpu=S3 -obj_path=DefaultBuild "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1058A.DVF" -g -g_line -Osize -I include -c -msg_lang=japanese
+W0511186:CC-RL V1のオプション"-Osize"の評価期間は残り56日です。評価期間経過後は、暗黙に"-Olite"指定に変更されます。引き続き"-Osize"を利用したい場合は製品の購入をご検討ください。
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\rlink.exe -subcommand=DefaultBuild\RL78_Sample2.clnk
-W0561018:The evaluation period of CC-RL V1 is valid for the remaining 57 days. After that, functional limit will be applied. Please consider purchasing the product.
-W0561018:The evaluation period of CC-RL V1 is valid for the remaining 57 days. After that, functional limit will be applied. Please consider purchasing the product.
+W0561018:The evaluation period of CC-RL V1 is valid for the remaining 56 days. After that, functional limit will be applied. Please consider purchasing the product.
+W0561018:The evaluation period of CC-RL V1 is valid for the remaining 56 days. After that, functional limit will be applied. Please consider purchasing the product.
 Renesas Optimizing Linker Completed
 ------ ビルド終了(エラー:0個, 警告:3個)(RL78_Sample2, DefaultBuild) ------
 
@@ -54,8 +53,8 @@ DefaultBuild\RL78_Sample2.clnk :
 
 
 --- SHA1 hash value of output files ---
-C:\Users\h_ito\Downloads\RL78_Sample2\DefaultBuild\RL78_Sample2.abs: cc1f24c4b039dce17d04bb32365bdafea82dc7ef
-C:\Users\h_ito\Downloads\RL78_Sample2\DefaultBuild\RL78_Sample2.hex: 3ade221772cea4997d456ba98de2a3e428db7c6b
+C:\Users\h_ito\Downloads\RL78_Sample2\DefaultBuild\RL78_Sample2.abs: 57390859886a21590d948893df4736e505be6afa
+C:\Users\h_ito\Downloads\RL78_Sample2\DefaultBuild\RL78_Sample2.hex: d6c4ef5267ad9904f6915464ca43a9484234ef07
 
 
 --- システム情報 ---
@@ -81,13 +80,13 @@ C:\Users\h_ito\Downloads\RL78_Sample2\DefaultBuild\RL78_Sample2.hex: 3ade221772c
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *メモリ使用量
  *プライベート・ワーキング・セット
-  374 MB
+  428 MB
  *GDIオブジェクト数
-  2388
+  2378
  *USERオブジェクト数
-  1862
+  2198
  *開いているファイル
-  0 editors, 0 files, 0 KB
+  6 editors, 6 files, 74 KB
 
 --- ビルド・ツール・プラグイン情報 ---
 RH850ビルド・ツールCC-RH用プラグイン
